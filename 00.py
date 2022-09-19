@@ -31,7 +31,7 @@ tmpr_var = tmpr[0].text #Температура
 tmpr_var_list = []
 tmpr_var_list.append(tmpr_var)
 
-test223
+test223-sadfd
 
 def current_weather():
 
