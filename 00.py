@@ -38,7 +38,7 @@ def current_weather():
     soup = bs(page.content, 'html.parser')
     week = soup.findAll('div', {'class':'wob_dts', 'id':'wob_dts'})
     week_var = week[0].text
-    if week_var != week_var_list[0].text:
+    if week_var != week_var_list[0]:
         os.system("cls")
         week_var_list.clear()
         week_var_list.append(week_var)
@@ -49,7 +49,7 @@ def current_weather():
 
     weather = soup.findAll('span', {'id':'wob_dc'})
     weather_var = weather[0].text
-    if weather_var != weather_var_list[0].text:
+    if weather_var != weather_var_list[0]:
         os.system("cls")         
         weather_var_list.clear()
         weather_var_list.append(weather_var)
@@ -60,7 +60,7 @@ def current_weather():
 
     tmpr = soup.findAll('span', {'class':'wob_t q8U8x', 'id':'wob_tm'})
     tmpr_var = tmpr[0].text
-    if tmpr_var != tmpr_var_list[0].text:
+    if tmpr_var != tmpr_var_list[0]:
         os.system("cls")
         tmpr_var_list.clear()
         tmpr_var_list.append(tmpr_var)
