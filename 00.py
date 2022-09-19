@@ -31,6 +31,8 @@ tmpr_var = tmpr[0].text #Температура
 tmpr_var_list = []
 tmpr_var_list.append(tmpr_var)
 
+test223
+
 def current_weather():
 
     page = requests.get(url, headers=headers)
