@@ -31,13 +31,11 @@ tmpr_var = tmpr[0].text #Температура
 tmpr_var_list = []
 tmpr_var_list.append(tmpr_var)
 
-test223-sadfd
 
 def current_weather():
 
     page = requests.get(url, headers=headers)
     soup = bs(page.content, 'html.parser')
-
     week = soup.findAll('div', {'class':'wob_dts', 'id':'wob_dts'})
     week_var = week[0].text
     if week_var != week[0].text:
@@ -70,7 +68,12 @@ def current_weather():
         print("День недели:", week_var_list[0])
         print('Погода:', weather_var_list[0])
         print('Температура:', tmpr_var_list[0] + ' °C')
+    
+    
     time.sleep(5)#Ждать 5 секунд что бы снова обновиться
+    
+
+
 
 try:
     print('Город:', city_var_list[0])
