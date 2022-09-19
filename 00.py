@@ -1,3 +1,4 @@
+from cgi import test
 import requests
 from bs4 import BeautifulSoup as bs
 import pandas as pd
@@ -12,7 +13,7 @@ city = soup.findAll('div', {'class':'wob_loc q8U8x', 'id':'wob_loc'})
 week = soup.findAll('div', {'class':'wob_dts', 'id':'wob_dts'})
 weather = soup.findAll('span', {'id':'wob_dc'})
 tmpr = soup.findAll('span', {'class':'wob_t q8U8x', 'id':'wob_tm'})
-
+test
 
 city_var = city[0].text #Город
 city_var_list = []
