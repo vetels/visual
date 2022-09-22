@@ -1,4 +1,18 @@
-a = 'acggrgrrat'.upper()
-c = (a.count('C') + a.count('G')) /  len(a) * 100
 
-print(c)
+s = 'aaaabbcaa'
+
+b = 'a'
+count = 0
+s_var = []
+for i in range(len(s)):
+    a = s[i]
+    
+    if b == a:
+        #count += 1
+        #s_var.append(a)
+        
+        print(a)
+       
+ 
+
+    
