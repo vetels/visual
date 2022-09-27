@@ -1,17 +1,23 @@
 
+from multiprocessing.resource_sharer import stop
+
+
 s = 'aaaabbcaa'
 
-b = 'a'
-count = 0
-s_var = []
-for i in range(len(s)):
-    a = s[i]
-    
-    if b == a:
-        #count += 1
-        #s_var.append(a)
-        
-        print(a)
+letters = []
+letter = []
+count = 1
+
+for i in s:
+    if i == s[count]:
+        print(i)
+        count += 1
+#
+    elif i != s[count]:
+        print(s[count - 1])
+        #letter_2 = letter.append(i)
+        break
+    #print(letters)
        
  
 
